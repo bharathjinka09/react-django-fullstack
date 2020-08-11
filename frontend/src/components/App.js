@@ -1,10 +1,20 @@
-import React, { Component } from 'react'
-import ReactDOM from 'react-dom'
+import React, { Component } from "react";
+import ReactDOM from "react-dom";
 
-class App extends Component{
-	render(){
-		return <h1>React App</h1>
-	}
+import Header from "./layout/Header";
+import Dashboard from "./leads/Dashboard";
+
+class App extends Component {
+  render() {
+    return (
+      <>
+        <Header />
+        <div className="container">
+          <Dashboard />
+        </div>
+      </>
+    );
+  }
 }
 
-ReactDOM.render(<App/>, document.getElementById('app'))
+ReactDOM.render(<App />, document.getElementById("app"));
